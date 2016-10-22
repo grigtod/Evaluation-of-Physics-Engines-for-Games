@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6ACA98B7-9B77-4E0B-9BD9-29A2885A00D5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PhysicsEvaluation</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>
+    </WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionPath)\..\..\Externals\freeglut\include;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Include;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Include\extensions;$(SolutionPath)\..\..\Externals\AntTweakBar\include;D:\DISSERTATION\PhysX evaluation\PhysX-3.3.0\Lib\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionPath)\..\..\Externals\freeglut\lib;D:\DISSERTATION\PhysX evaluation\PhysX-3.3.0\Lib\win32;$(SolutionPath)\..\..\Externals\AntTweakBar\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionPath)\..\..\Externals\freeglut\bin;$(SolutionPath)\..\..\Externals\AntTweakBar\src;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionPath)\..\..\Externals\freeglut\include;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Include;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Include\extensions;$(SolutionPath)\..\..\Externals\AntTweakBar\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionPath)\..\..\Externals\freeglut\lib;D:\DISSERTATION\PhysX evaluation\PhysX-3.3.0\Lib\win32;$(SolutionPath)\..\..\Externals\AntTweakBar\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionPath)\..\..\Externals\freeglut\bin;$(SolutionPath)\..\..\Externals\AntTweakBar\src;$(SolutionPath)\..\..\Externals\PhysX-3.3.0\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_XT_STATICLINK;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_CONFIG_SIMD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionPath)\..\..\Externals\hk2013_1_0_r1\Source;$(SolutionPath)\..\..\Externals\bullet-2.82-r2704\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>AntTweakBar.lib;PhysX3CHECKED_x86.lib;PhysX3CommonCHECKED_x86.lib;PhysX3ExtensionsCHECKED.lib;PhysXVisualDebuggerSDKCHECKED.lib;PhysXProfileSDKCHECKED.lib;PhysX3CookingDEBUG_x86.lib;PxTaskCHECKED.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkVisualize.lib;hkInternal.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkpVehicle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionPath)\..\..\Externals\hk2013_1_0_r1\Lib\win32_vs2010\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_XT_STATICLINK;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_CONFIG_SIMD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionPath)\..\..\Externals\hk2013_1_0_r1\Source;$(SolutionPath)\..\..\Externals\bullet-2.82-r2704\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>AntTweakBar.lib;PhysX3_x86.lib;PhysX3Common_x86.lib;PhysX3Extensions.lib;PhysX3CHECKED_x86.lib;PhysX3Cooking_x86.lib;hkBase.lib;hkCompat.lib;hkSceneData.lib;hkSerialize.lib;hkVisualize.lib;hkInternal.lib;hkGeometryUtilities.lib;hkcdInternal.lib;hkcdCollide.lib;hkpCollide.lib;hkpConstraint.lib;hkpConstraintSolver.lib;hkpDynamics.lib;hkpInternal.lib;hkpUtilities.lib;hkpVehicle.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionPath)\..\..\Externals\hk2013_1_0_r1\Lib\win32_vs2010\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="BulletInit.h" />
+    <ClInclude Include="Capsule.h" />
+    <ClInclude Include="Convex.h" />
+    <ClInclude Include="glm.h" />
+    <ClInclude Include="HavokInit.h" />
+    <ClInclude Include="ObjectBase.h" />
+    <ClInclude Include="PhysicsBase.h" />
+    <ClInclude Include="PhysXInit.h" />
+    <ClInclude Include="Sphere.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="BulletInit.cpp" />
+    <ClCompile Include="Capsule.cpp" />
+    <ClCompile Include="Convex.cpp" />
+    <ClCompile Include="glm.cpp" />
+    <ClCompile Include="ObjectBase.cpp" />
+    <ClCompile Include="HavokInit.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PhysXInit.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Externals\bullet-2.82-r2704\lib\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{37638d1a-b271-461e-a5ee-d5d0d5c10cce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Externals\bullet-2.82-r2704\lib\src\BulletDynamics\BulletDynamics.vcxproj">
+      <Project>{4576bc9f-f3d8-4545-b009-4066ed15b695}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Externals\bullet-2.82-r2704\lib\src\LinearMath\LinearMath.vcxproj">
+      <Project>{1d4828fb-608f-434e-a98c-6a01ec780c9c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

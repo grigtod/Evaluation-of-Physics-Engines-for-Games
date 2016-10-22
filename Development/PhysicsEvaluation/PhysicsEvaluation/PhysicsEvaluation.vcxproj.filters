@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ObjectsH">
+      <UniqueIdentifier>{86f7b59c-b7e6-4806-9fc9-f8978e5463f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PhysicsH">
+      <UniqueIdentifier>{5e2a4ec2-cafe-4835-a248-40ffcb84932c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PhysicsCpp">
+      <UniqueIdentifier>{bef5a99b-256a-4cf1-a3fa-62a7ce4f4bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ObjectsCpp">
+      <UniqueIdentifier>{08e80267-fe19-4182-b6da-a218a56093a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RenderingH">
+      <UniqueIdentifier>{2edaa5f7-0f1c-48fa-b345-7dce3f1f81ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RenderingCpp">
+      <UniqueIdentifier>{6ab3ae41-2698-4d9e-8972-546dd8752a3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Box.h">
+      <Filter>Header Files\ObjectsH</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files\ObjectsH</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBase.h">
+      <Filter>Header Files\ObjectsH</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsBase.h">
+      <Filter>Header Files\PhysicsH</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysXInit.h">
+      <Filter>Header Files\PhysicsH</Filter>
+    </ClInclude>
+    <ClInclude Include="HavokInit.h">
+      <Filter>Header Files\PhysicsH</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletInit.h">
+      <Filter>Header Files\PhysicsH</Filter>
+    </ClInclude>
+    <ClInclude Include="glm.h">
+      <Filter>Header Files\RenderingH</Filter>
+    </ClInclude>
+    <ClInclude Include="Convex.h">
+      <Filter>Header Files\ObjectsH</Filter>
+    </ClInclude>
+    <ClInclude Include="Capsule.h">
+      <Filter>Header Files\ObjectsH</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Box.cpp">
+      <Filter>Source Files\ObjectsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\ObjectsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HavokInit.cpp">
+      <Filter>Source Files\PhysicsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletInit.cpp">
+      <Filter>Source Files\PhysicsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysXInit.cpp">
+      <Filter>Source Files\PhysicsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBase.cpp">
+      <Filter>Source Files\ObjectsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="glm.cpp">
+      <Filter>Source Files\RenderingCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Convex.cpp">
+      <Filter>Source Files\ObjectsCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Capsule.cpp">
+      <Filter>Source Files\ObjectsCpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
