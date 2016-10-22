@@ -1,8 +1,9 @@
 # Evaluation-of-Physics-Engines-for-Games
-Evaluates PhysX, Havok and Bullet engine. 
+
+This is an old project of mine. It's the artefact of my final year project from the BSc course I completed a few years ago.
 
 
-Info:
+The original info file:
 This is C++ based and uses some OOP.
 I used OpenGL for rendering and Anttweakbar for the UI.
 
